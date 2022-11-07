@@ -7,9 +7,9 @@ bttn.addEventListener('click', () => {
     const check = document.getElementById("check").value;
 
     if (fname !== '' && lname !== '' && email !== '' && check === true) {
-        document.getElementById("submit").classList.add("disappear");
-        document.getElementById("loader").classList.add("appear");
-        document.getElementById("form").classList.add("bg"); //testing
+        document.getElementById("submit").style.display = "none";
+        document.getElementById("loader").style.display = "block";
+        document.getElementById("form").style.color = "blue"; //testing
         setTimeout(() => {
             document.getElementById("loader").classList.remove("appear")
             document.getElementById("thanks").innerText = 'thanks for signing up!';

@@ -15,7 +15,7 @@
     animation: spin 1s linear infinite;
     margin: auto;
     margin-top: 10px;
-    opacity: 0;
+    display: none;
   }
   
 @keyframes spin {
